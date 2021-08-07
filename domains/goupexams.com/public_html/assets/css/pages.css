@@ -1,0 +1,292 @@
+img.subject_image {
+    height: 189px;
+    width: 322px;
+}
+td {
+    direction: inherit;
+}
+.teachers {
+    margin: auto;
+    width: 80%;
+}
+img.teacher_photo {
+    width: 70px;
+    border-radius: 50%;
+    height: 73px;
+}
+a:hover {
+    text-decoration: none;
+}
+select.year_regist {
+    border: 1px solid #e6e6e6;
+    outline: none;
+    width: 100%;
+    height: 43px;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 0 5px 0 14px;
+    color: #333333;
+}
+input#frm-reg-email {
+    border: 1px solid #e6e6e6;
+    outline: none;
+    width: 100%;
+    height: 43px;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 0 5px 0 14px;
+    color: #333333;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;
+    direction: rtl;}
+
+#customers tr:hover {background-color: #ddd;
+    direction: rtl;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: right;
+  background-color: #000000;
+  color: white;
+
+
+
+}
+.exams {
+    margin: 64px;
+    color: black;
+    position: relative;
+}
+td {
+    direction: rtl;
+}
+
+h1.heading.font-x2.unique {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 13px;
+    font-family: system-ui;
+}
+.SRC_IMAGE {
+         width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -20px;
+    border-radius: 30px 30px 30px 30px;
+    z-index: 99;
+    height: 125.62px;
+   
+}
+
+ 
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: black;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: auto;
+    height: 416px;
+    object-fit: contain;
+}
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    margin: auto;
+    height: 411px;
+}
+.slider {
+    width: 100%;
+    background-color: black;
+    height: 406px;
+
+}
+
+.swiper-slide.swiper-slide-active {
+    background: black;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+    color: white;
+}
+.swiper-button-prev {
+    color: black;
+}
+
+.dahboard {
+    width: 100%;
+    /* margin: auto; */
+    color: black;
+    text-align: end;
+    margin-top: 76px;
+}
+i.fas.fa-check-circle {
+    font-size: 13px;
+}
+
+
+.result {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 101px;
+    color: black;
+    width: 48%;
+    margin: auto;
+    background: linear-gradient(#ee7045, #e8a12b);
+    border-radius: 30px 30px 30px 30px;
+    padding: 29px;
+}
+ 
+
+
+.unique{
+    display:none
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+.backdesk {
+    display: flex;
+    flex-direction: column;
+}
+.big {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.imgback {
+    width: 510px;
+    margin:auto;
+}
+@media only screen and (max-width: 1200px) {
+ .backdesk {
+    display: flex;
+    flex-direction: column;
+}
+.big {
+    display: flex;
+    flex-direction: column;
+}
+.imgback {
+    width: 60%;
+    margin:auto;
+}
+}
+
+@media only screen and (max-width: 725px) {
+ .result {
+   
+         width: auto;
+   
+}
+}
+  @media screen and (max-width: 430px) {
+    table {
+      border: 0;
+    }
+
+    table caption {
+      font-size: 1.3em;
+    }
+
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    .unique{
+    display:block
+}
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+
+    table td::before {
+
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+
+ 
