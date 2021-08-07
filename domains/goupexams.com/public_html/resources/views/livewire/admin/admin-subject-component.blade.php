@@ -1,0 +1,104 @@
+<div>
+    <style>
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #000000;
+          color: white;
+        }
+  
+a.add_sub {
+    float: right;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    border-radius: 14px;
+    height: 38px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 128px;
+    padding-top: 6px;
+}
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    width: 606px;
+    text-align: center;
+    margin: auto;
+}
+a.color {
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+}
+img {
+    width: 78px;
+    height: 75px;
+    display: flex;
+    align-content: center;
+    float: left;
+}
+.actions {
+    display: flex;
+    direction: ltr;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+}
+a.color:hover {
+    color: #0056b3 ;
+    font-weight: bold;
+    font-size: 23px;
+}
+        </style>
+        <div class="dahboard">
+            <a class="add_sub" href="{{route('admin.add_subject')}}">Add subject</a>
+            <a class="add_sub" href="{{route('admin.dashboard')}}">go to Dashboard</a>
+
+            @if(Session::has('message'))
+            <div class="alert alert-primary" role="alert">
+                {{Session::get('message')}}
+              </div>
+
+            @endif
+  <table id="customers">
+          <tr>
+            <th>Subject Name </th>
+            <th>image</th>
+            <th>action</th>
+          </tr>
+          @foreach ($subjects as $subject )
+   <tr>
+            <td ><a class="color"  >{{$subject->name_subject}}</a></td>
+            <td><img width="20px" src="{{asset('assets/imagesub')}}/{{$subject->image}}"/></td>
+            <td>
+                <div class="actions">
+                     <a class="color" href="{{route('admin.teachers_sub',['subject_id'=>$subject->id])}}"> <i class="fas fa-chalkboard-teacher"></i> Teachers</a>
+                </div>
+            </td>
+          </tr>
+          @endforeach
+
+
+        </table>
+        </div>
+
+
+</div>
